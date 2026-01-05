@@ -8,8 +8,6 @@ trigger:
 
 pool:
   name: LocalAgent
-  demands:
-    - agent.name -equals MyWindowsAgent
 
 steps:
 - task: Maven@3
