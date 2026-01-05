@@ -8,6 +8,10 @@ trigger:
 
 pool:
   name: LocalAgent
+  demands:
+  - agent.name -equals SOLPF3D6P06 # <--- Changed to your actual agent name
+  - maven
+  - Agent.Version -gtVersion 4.266.2
 
 steps:
 - task: Maven@3
